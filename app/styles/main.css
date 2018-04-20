@@ -1,0 +1,28 @@
+body {
+  background-color: #FBFBFB;
+  font-family: 'Helvetica', sans-serif;
+}
+
+main.tasks {
+  margin: 50px auto;
+  padding: 0;
+  width: 380px;
+  height: 500px;
+  background-color: #DDD;
+}
+
+div.task-title {
+  padding: 5px 0px 5px 20px;
+  color: #555555;
+  background-color: #CFCFCF;
+}
+
+div.task-list ul {
+  font-size: 10pt;
+  color: #6A6A6A;
+  background-color: #EDEDED;
+  margin: 0;
+  padding: 15px 15px 15px 30px;
+  text-decoration: none;
+  border-top: 1px solid #FFF;
+}
