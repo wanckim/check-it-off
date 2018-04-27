@@ -50,6 +50,17 @@ div.task-list span.task-old {
   text-decoration-line: line-through;
 }
 
+div.task-list i {
+  display: inline-block;
+  float: right;
+  font-size: 24pt;
+  margin: -9px 5px 0 0;
+}
+
+div.task-list i:hover {
+  cursor: pointer;
+}
+
 div.task-input div.task-input-info h5.desc {
   display: inline-block;
   width: auto;

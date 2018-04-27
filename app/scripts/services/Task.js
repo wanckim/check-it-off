@@ -27,6 +27,24 @@
       });
     };
 
+    Task.toggle = function(task) {
+      if (task.state === "completed") {
+        task.state = "active";
+        list.$save(task);
+      } else {
+        task.state = "completed";
+        list.$save(task);
+      };
+      console.log("\""+task.task+"\"" + " is now " + task.state);
+    };
+
+    Task.expired = function(task) {
+      var currentDate = new Date();
+      var expireDate = new Date(task.expireAt);
+
+      return currentDate > expireDate;
+    }
+
     var getTime = function() {
       var currentTime = new Date();
 

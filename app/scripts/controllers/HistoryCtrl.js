@@ -5,10 +5,11 @@
     this.oldTasks = Task.all;
 
     this.isOld = function(task) {
-      var currentDate = new Date();
-      var expireDate = new Date(task.expireAt);
+      return Task.expired(task) || task.state === "completed";
+    };
 
-      return currentDate > expireDate && task.state === "completed";
+    this.isExpired = function(task) {
+      return Task.expired(task);
     };
   }
 

@@ -13,10 +13,15 @@
     };
 
     this.isExpired = function(task) {
-      var currentDate = new Date();
-      var expireDate = new Date(task.expireAt);
+      return Task.expired(task);
+    };
 
-      return currentDate > expireDate || task.status === "completed";
+    this.isActive = function(task) {
+      return task.state === "active";
+    };
+
+    this.toggleState = function(task) {
+      Task.toggle(task);
     };
   }
 
