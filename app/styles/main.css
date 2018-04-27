@@ -3,8 +3,27 @@ body {
   font-family: 'Helvetica', sans-serif;
 }
 
+div.nav {
+  margin: 50px auto 5px auto;
+  width: 380px;
+  text-align: right;
+}
+
+div.nav a {
+  text-decoration: none;
+  color: #6F6F6F;
+  font-weight: bold;
+  font-size: 10pt;
+  padding-left: 10px;
+}
+
+div.nav a:hover {
+  color: #34abe2;
+  text-decoration: underline;
+}
+
 main.tasks {
-  margin: 50px auto;
+  margin: 0px auto;
   padding: 0;
   width: 380px;
   height: 500px;
@@ -25,4 +44,8 @@ div.task-list ul {
   padding: 15px 15px 15px 30px;
   text-decoration: none;
   border-top: 1px solid #FFF;
+}
+
+div.task-list span.task-old {
+  text-decoration-line: line-through;
 }

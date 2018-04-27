@@ -1,0 +1,12 @@
+<main class="tasks">
+  <div class="task-title">
+    <h3>Task History</h3>
+  </div>
+  <div class="task-list">
+    <div ng-repeat="task in history.oldTasks">
+      <ul ng-show="history.isOld(task)">
+        <span class="task-old">{{ task.task }}</span>
+      </ul>
+    </div>
+  </div>
+</main>
