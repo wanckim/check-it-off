@@ -3,8 +3,10 @@
     <h3>Current Tasks</h3>
   </div>
   <div class="task-list">
-    <ul ng-repeat="task in home.tasks">
-      {{ task.task }}
-    </ul>
+    <div ng-repeat="task in home.tasks">
+      <ul ng-hide="home.isExpired(task)">
+        <span>{{ task.task }}</span>
+      </ul>
+    </div>
   </div>
 </main>
