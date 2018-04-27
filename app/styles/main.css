@@ -59,6 +59,7 @@ div.task-list i {
 
 div.task-list i:hover {
   cursor: pointer;
+  color: #34abe2;
 }
 
 div.task-input div.task-input-info h5.desc {

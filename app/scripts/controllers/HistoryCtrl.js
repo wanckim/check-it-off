@@ -7,10 +7,6 @@
     this.isOld = function(task) {
       return Task.expired(task) || task.state === "completed";
     };
-
-    this.isExpired = function(task) {
-      return Task.expired(task);
-    };
   }
 
   angular

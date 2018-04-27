@@ -22,14 +22,9 @@
     <div ng-repeat="task in home.tasks">
       <ul ng-hide="home.isExpired(task)">
         <span>{{ task.task }}</span>
-        <i class="icon ion-checkmark-circled"
+        <i class="ion-ios-checkmark-outline"
             ng-show="home.isActive(task)"
             ng-click="home.toggleState(task)">
-        </i>
-        <i class="icon ion-checkmark-circled"
-            ng-show="!home.isActive(task)"
-            ng-click="home.toggleState(task)"
-            style="color:#00DA00">
         </i>
       </ul>
     </div>

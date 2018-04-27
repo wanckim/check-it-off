@@ -13,7 +13,7 @@
     };
 
     this.isExpired = function(task) {
-      return Task.expired(task);
+      return Task.expired(task) || task.state === "completed";
     };
 
     this.isActive = function(task) {

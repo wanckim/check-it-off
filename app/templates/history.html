@@ -5,8 +5,7 @@
   <div class="task-list">
     <div ng-repeat="task in history.oldTasks">
       <ul ng-show="history.isOld(task)">
-        <span ng-show="history.isExpired(task)" class="task-old">{{ task.task }}</span>
-        <span ng-show="!history.isExpired(task)">{{ task.task }}</span>
+        <span class="task-old">{{ task.task }}</span>
       </ul>
     </div>
   </div>
