@@ -11,7 +11,8 @@
       var newTask = {
         task: task,
         createdAt: timeArr[0],
-        expireAt: timeArr[1]
+        expireAt: timeArr[1],
+        status: "on going"
       }
 
       list.$add(newTask).then(function(ref) {

@@ -11,11 +11,11 @@
     this.isExpired = function(task) {
       var currentDate = new Date();
       var expireDate = new Date(task.expireAt);
-      if (currentDate > expireDate) {
-        console.log(task.task + " - expires on " + task.expireAt + " | Expired");
+      if (currentDate > expireDate || task.status === "completed") {
+        console.log(task.task + " - expires on " + task.expireAt + " | " + task.status);
         return true;
       } else {
-        console.log(task.task + " - expires on " + task.expireAt + " | On going");
+        console.log(task.task + " - expires on " + task.expireAt + " | " + task.status);
         return false;
       };
     };
