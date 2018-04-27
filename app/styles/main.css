@@ -24,28 +24,75 @@ div.nav a:hover {
 
 main.tasks {
   margin: 0px auto;
-  padding: 0;
+  padding: 0 0 10px 0;
   width: 380px;
-  height: 500px;
-  background-color: #DDD;
+  min-height: 500px;
+  background-color: #DADADA;
 }
 
 div.task-title {
   padding: 5px 0px 5px 20px;
   color: #555555;
-  background-color: #CFCFCF;
+  background-color: #BEBEBE;
 }
 
 div.task-list ul {
   font-size: 10pt;
   color: #6A6A6A;
-  background-color: #EDEDED;
-  margin: 0;
+  background-color: #EFEFEF;
+  margin: 1px 0;
   padding: 15px 15px 15px 30px;
   text-decoration: none;
-  border-top: 1px solid #FFF;
+  /*border-top: 1px solid #FFF;*/
 }
 
 div.task-list span.task-old {
   text-decoration-line: line-through;
+}
+
+div.task-input div.task-input-info h5.desc {
+  display: inline-block;
+  width: auto;
+  margin: 0 15px 0 0;
+  padding: 8px 30px;
+  color: #6A6A6A;
+}
+
+div.task-input form input, select{
+  width: 135px;
+  font-size: 10pt;
+  color: #6A6A6A;
+  background-color: #EFEFEF;
+  margin-bottom: 3px;
+  padding: 15px;
+  text-decoration: none;
+  border: none;
+}
+
+div.task-input form select{
+  padding: 14px;
+}
+
+div.task-input form input::placeholder {
+  color: #BBB;
+}
+
+div.task-input form button {
+  color: #EDEDED;
+  background-color: #555;
+  margin: 0;
+  padding: 15px 25px;
+  border: none;
+  float: right;
+}
+
+div.task-input form button:hover {
+  color: #AAA;
+  background-color: #fcbf3a;
+  cursor: pointer;
+}
+
+div.task-input form button:hover:active {
+  color: #EAEAEA;
+  background-color: #efa90e;
 }

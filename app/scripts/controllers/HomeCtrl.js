@@ -1,10 +1,16 @@
 (function() {
-  function HomeCtrl(Task) {
+  function HomeCtrl($scope, Task) {
     /**
     * @desc Grab all task items in Task object firebase array
     * @type {Object}
     */
     this.tasks = Task.all;
+
+    this.addTask = function() {
+      if($scope.newTaskDesc && $scope.priority) {
+        Task.add($scope.newTaskDesc, $scope.priority);
+      };
+    };
 
     this.isExpired = function(task) {
       var currentDate = new Date();
@@ -16,5 +22,5 @@
 
   angular
     .module('checkItOff')
-    .controller('HomeCtrl', ['Task', HomeCtrl]);
+    .controller('HomeCtrl', ['$scope', 'Task', HomeCtrl]);
 })();

@@ -8,7 +8,7 @@
       var currentDate = new Date();
       var expireDate = new Date(task.expireAt);
 
-      return currentDate > expireDate && task.status === "completed";
+      return currentDate > expireDate && task.state === "completed";
     };
   }
 
