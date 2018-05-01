@@ -9,6 +9,7 @@
     this.addTask = function() {
       if($scope.newTaskDesc && $scope.priority) {
         Task.add($scope.newTaskDesc, $scope.priority);
+        $scope.newTaskDesc = null;
       };
     };
 
